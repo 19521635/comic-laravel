@@ -1,4 +1,4 @@
-<div class="container mx-auto py-4 flex justify-items-center items-center w-full">
+<div class="container mx-auto p-4 flex justify-items-center items-center w-full">
     {{-- Care about people's approval and you will be their prisoner. --}}
     <div class="logo">
         <a href="/">
@@ -7,8 +7,8 @@
     </div>
 
     <div class="search ml-20 relative w-1/3">
-        <input type="text" wire:model="keyword" name="keyword" autocomplete="off" autocorrect="off" autocapitalize="off"
-            spellcheck="false" placeholder="Nhập tên truyện cần tìm"
+        <input type="text" wire:model.defer="keyword" name="keyword" autocomplete="off" autocorrect="off"
+            autocapitalize="off" spellcheck="false" placeholder="Nhập tên truyện cần tìm"
             class="w-full rounded-full border border-gray-200 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-200">
         <span class="absolute inset-y-0 right-0 flex items-center">
             <button class="w-8 h-8 focus:outline-none" wire:click="search">

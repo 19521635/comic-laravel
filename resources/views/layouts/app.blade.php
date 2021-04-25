@@ -9,7 +9,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -22,8 +24,13 @@
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
-        <header class="bg-gray-50">
-            @livewire('navigation')
+        <header>
+            <div class="bg-gray-50">
+                @livewire('navigation')
+            </div>
+            <div class="bg-blue-500">
+                @livewire('menu')
+            </div>
         </header>
 
         <!-- Page Content -->
