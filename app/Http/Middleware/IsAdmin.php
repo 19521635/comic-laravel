@@ -22,7 +22,7 @@ class IsAdmin
             if (Auth::user()->isAdmin()) {
                 return $next($request);
             } else {
-                return RouteServiceProvider::HOME;
+                return redirect(RouteServiceProvider::HOME);
             }
         } 
         return redirect()->route('login');  
