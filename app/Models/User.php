@@ -59,4 +59,12 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function isAdmin() {
+        return $this->user_type_id == 1;
+    }
+
+    public function user_types() {
+        return $this->belongsTo(UserType::class, 'user_type_id');
+    }
 }

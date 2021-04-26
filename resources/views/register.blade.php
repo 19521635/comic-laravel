@@ -1,0 +1,1 @@
+<x-app-layout>register</x-app-layout>

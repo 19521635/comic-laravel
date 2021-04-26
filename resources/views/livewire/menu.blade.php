@@ -1,6 +1,6 @@
 <div class="container px-4 mx-auto flex justify-items-center items-center w-full h-full text-white">
     {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
-    <div class="menu">
+    <div class="menu z-50">
         <ul class="flex flex-row">
             <li class="hover:bg-red-700 group">
                 <a href="#" class="p-3 block">Menu Button</a>
