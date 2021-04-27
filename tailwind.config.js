@@ -13,6 +13,11 @@ module.exports = {
             fontFamily: {
                 sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
             },
+            transitionProperty: {
+                height: "height",
+                maxHeight: "max-height",
+                spacing: "margin, padding",
+            },
         },
     },
 
@@ -20,6 +25,11 @@ module.exports = {
         extend: {
             opacity: ["disabled"],
             display: ["group-hover"],
+            backgroundColor: ["active"],
+            transitionProperty: ["group-hover"],
+            transform: ["group-hover"],
+            translate: ["group-hover"],
+            visibility: ["group-hover"],
         },
     },
 

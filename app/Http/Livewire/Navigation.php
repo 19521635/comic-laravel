@@ -7,6 +7,7 @@ use Livewire\Component;
 class Navigation extends Component
 {
     public $keyword;
+
     public function render()
     {
         return view('livewire.navigation');

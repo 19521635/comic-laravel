@@ -23,7 +23,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::group(['middleware' => ['web', 'auth', 'admin'], 'prefix' => 'admin'],function () {
-    Route::get('/', function () {
-        
-    });
+    Route::get('/', App\Http\Livewire\Admin\Components\Dashboard\Index::class)->name('admin.dashboard');
+    Route::get('/theme/menu', App\Http\Livewire\Admin\Components\Theme\Menu::class)->name('admin.theme.menu');
 });
