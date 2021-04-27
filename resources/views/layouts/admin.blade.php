@@ -34,7 +34,7 @@
     <!-- Page Content -->
     <main class="flex flex-row">
       @livewire('admin.menu')
-      <div class="flex flex-col">
+      <div class="flex flex-col w-full">
         {{ $slot }}
       </div>
     </main>
